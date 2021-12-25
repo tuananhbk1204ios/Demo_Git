@@ -12,6 +12,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         printWith(string: self.string)
+        printAnother(string: string)
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -22,5 +23,9 @@ class ViewController: UIViewController {
 extension ViewController {
     private func printWith(string: String) {
         print("@log: \(string)")
+    }
+    
+    private func printAnother(string: String) {
+        print("@log1: \(string)")
     }
 }
