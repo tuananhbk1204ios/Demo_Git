@@ -36,4 +36,8 @@ extension ViewController {
     private func printWithHello(Another string: String) {
         print("@log2: \(string)")
     }
+    
+    private func showName(with string: String) {
+        print("@log2: \(string)")
+    }
 }
