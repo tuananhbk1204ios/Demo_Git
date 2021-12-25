@@ -8,12 +8,19 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    var string = "Hello World repository for Git tutorial.This is an example repository for the Git tutoial on https://www.w3schools.com.This repository is built step by step in the tutorial."
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        printWith(string: self.string)
     }
-
-
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+    }
 }
 
+extension ViewController {
+    private func printWith(string: String) {
+        print("@log: \(string)")
+    }
+}
