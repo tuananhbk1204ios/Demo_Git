@@ -32,4 +32,8 @@ extension ViewController {
     private func printWith(Another string: String) {
         print("@log2: \(string)")
     }
+    
+    private func printWithHello(Another string: String) {
+        print("@log2: \(string)")
+    }
 }
